@@ -23,7 +23,14 @@
     <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
     <nav class="nav" aria-label="Primary navigation">
       <a href="#about">About</a>
-      <a href="#products">Products</a>
+      <div class="nav-dropdown">
+        <a class="nav-dropdown-toggle" href="#products">Products</a>
+        <div class="nav-dropdown-menu">
+          <a href="#rail-specs">Rail Clamps</a>
+          <a href="#heavy-duty-trolley">Heavy-Duty Cable Trolley</a>
+          <a href="#double-decker-trolley">Double Decker Cable Trolley</a>
+        </div>
+      </div>
       <a href="#applications">Applications</a>
       <a href="#quality">Why Us</a>
       <a href="#contact">Contact</a>
@@ -168,8 +175,8 @@
     <div class="container">
       <div class="section-head"><div><p class="eyebrow">CABLE TROLLEY CONFIGURATIONS</p><h2>Heavy-duty moving trolley options.</h2></div><p class="section-intro">Dimensions shown below reproduce the specifications in the supplied brochure.</p></div>
       <div class="trolley-grid">
-        <div class="spec-card"><img src="assets/page6_img1.png" alt="Heavy-duty moving cable trolley" loading="lazy"><h3>Heavy Duty Moving Cable Trolley</h3><table><thead><tr><th>Length</th><th>Side plate</th><th>Wheel</th></tr></thead><tbody><tr><td>100 mm</td><td>6 mm</td><td>50 mm</td></tr><tr><td>170 mm</td><td>6 mm</td><td>60 mm</td></tr><tr><td>240 mm</td><td>6 mm</td><td>60 mm</td></tr></tbody></table></div>
-        <div class="spec-card"><img src="assets/page6_img2.png" alt="Heavy-duty moving double and three decker cable trolley" loading="lazy"><h3>Double & Three Decker Trolleys</h3><table><thead><tr><th>Variant</th><th>Length</th><th>Side plate</th><th>Wheel</th></tr></thead><tbody><tr><td>Double</td><td>250 mm</td><td>8 mm</td><td>70 mm</td></tr><tr><td>Double</td><td>300 mm</td><td>8 mm</td><td>70 mm</td></tr><tr><td>Three</td><td>300/310 mm</td><td>8 mm</td><td>70 mm</td></tr></tbody></table></div>
+        <div class="spec-card" id="heavy-duty-trolley"><img src="assets/page6_img1.png" alt="Heavy-duty moving cable trolley" loading="lazy"><h3>Heavy Duty Moving Cable Trolley</h3><table><thead><tr><th>Length</th><th>Side plate</th><th>Wheel</th></tr></thead><tbody><tr><td>100 mm</td><td>6 mm</td><td>50 mm</td></tr><tr><td>170 mm</td><td>6 mm</td><td>60 mm</td></tr><tr><td>240 mm</td><td>6 mm</td><td>60 mm</td></tr></tbody></table></div>
+        <div class="spec-card" id="double-decker-trolley"><img src="assets/page6_img2.png" alt="Heavy-duty moving double and three decker cable trolley" loading="lazy"><h3>Double & Three Decker Trolleys</h3><table><thead><tr><th>Variant</th><th>Length</th><th>Side plate</th><th>Wheel</th></tr></thead><tbody><tr><td>Double</td><td>250 mm</td><td>8 mm</td><td>70 mm</td></tr><tr><td>Double</td><td>300 mm</td><td>8 mm</td><td>70 mm</td></tr><tr><td>Three</td><td>300/310 mm</td><td>8 mm</td><td>70 mm</td></tr></tbody></table></div>
       </div>
     </div>
   </section>
@@ -193,12 +200,27 @@
   <section class="section section-light clients" id="clients">
     <div class="container">
       <div class="section-head"><div><p class="eyebrow">SELECTED CUSTOMERS</p><h2>Trusted by industrial organizations.</h2></div><p class="section-intro">Customer names and logos below are reproduced from the supplied company brochure.</p></div>
-      <div class="client-logos">
-        <img src="assets/page7_img2.png" alt="Saico logo">
-        <img src="assets/page7_img3.png" alt="Mechtrotech Projects Pvt. Ltd. logo">
-        <img src="assets/page7_img4.png" alt="Akruti Industries logo">
-        <img src="assets/page7_img5.png" alt="Maithan Ispat Limited logo">
-        <div class="client-text">GSF STEEL<br><small>Odisha</small></div>
+      <div class="client-marquee" aria-label="Selected customers">
+        <div class="client-marquee-track">
+          <div class="client-marquee-group">
+            <div class="client-logos">
+              <img src="assets/page7_img2.png" alt="Saico logo">
+              <img src="assets/page7_img3.png" alt="Mechtrotech Projects Pvt. Ltd. logo">
+              <img src="assets/page7_img4.png" alt="Akruti Industries logo">
+              <img src="assets/page7_img5.png" alt="Maithan Ispat Limited logo">
+              <div class="client-text">GSF STEEL<br><small>Odisha</small></div>
+            </div>
+          </div>
+          <div class="client-marquee-group" aria-hidden="true">
+            <div class="client-logos">
+              <img src="assets/page7_img2.png" alt="">
+              <img src="assets/page7_img3.png" alt="">
+              <img src="assets/page7_img4.png" alt="">
+              <img src="assets/page7_img5.png" alt="">
+              <div class="client-text">GSF STEEL<br><small>Odisha</small></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
